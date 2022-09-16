@@ -1,1 +1,4 @@
-# AC-luogu-python
+# 尝试用`python3`A掉所有洛谷上的入门级题目
+
+
+
