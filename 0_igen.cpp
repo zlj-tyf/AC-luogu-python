@@ -6,7 +6,8 @@ int main()
 {
     // cout << "从B2001到B多少\n\n";
     // freopen("gen.txt", "r", stdin);
-int i=FN;
+int i;
+cin>>i;
     // int endname=1;
     // cin >> i;
     // cout << endname << endl;
@@ -47,4 +48,19 @@ int i=FN;
     system(cmd_py.c_str());
     cout << end << endl;
     fclose(stdout);
+    string nfname="B";
+    i++;
+    ss.clear();
+    ss << i;
+    // string str;
+    ss >> str;
+    nfname+=str;
+    string cppnf=nfname+".cpp";
+    string pynf=nfname+".py";
+    string gcpp="blank.bat>"+cppnf;
+    string gpy="blank.bat>"+pynf;
+    system(gcpp.data());
+    // system("taskkill /f /im winver.exe /t");
+    system(gpy.data());
+    // system("taskkill /f /im winver.exe /t");
 }
